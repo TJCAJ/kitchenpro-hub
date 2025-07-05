@@ -1,0 +1,48 @@
+{
+  "site": {
+    "name": "KitchenPro Hub",
+    "tagline": "Your Ultimate Guide to Professional Kitchen Tools",
+    "description": "Discover the best kitchen tools, appliances, and equipment to elevate your cooking experience. Expert reviews, buying guides, and professional recommendations.",
+    "url": "https://www.kitchenprohub.com",
+    "author": "KitchenPro Team"
+  },
+  "monetization": {
+    "google_adsense": {
+      "publisher_id": "ca-pub-5260130878751797",
+      "ad_units": {
+        "header_banner": "728x90",
+        "sidebar_square": "300x250", 
+        "in_content": "336x280",
+        "mobile_banner": "320x100"
+      }
+    },
+    "amazon_affiliate": {
+      "tag": "aiincomehub03-20",
+      "base_url": "https://www.amazon.com/s?k=",
+      "link_format": "https://www.amazon.com/s?k={product}&tag=aiincomehub03-20"
+    }
+  },
+  "categories": {
+    "kitchen-essentials": {
+      "name": "Kitchen Essentials",
+      "description": "Must-have tools every home cook needs"
+    },
+    "cooking-appliances": {
+      "name": "Cooking Appliances", 
+      "description": "Modern appliances to revolutionize your cooking"
+    },
+    "bakeware": {
+      "name": "Bakeware",
+      "description": "Professional baking tools and equipment"
+    },
+    "storage-solutions": {
+      "name": "Storage Solutions",
+      "description": "Smart storage for organized kitchens"
+    }
+  },
+  "seo": {
+    "meta_keywords": "kitchen tools, cooking equipment, kitchen appliances, professional cooking, kitchen essentials",
+    "default_meta_description": "Find the best kitchen tools and cooking equipment. Expert reviews and recommendations to help you choose the perfect kitchen essentials.",
+    "og_image": "/images/hero-kitchen-tools.jpg"
+  }
+}
