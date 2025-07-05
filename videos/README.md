@@ -3,7 +3,7 @@
 ## Place your welcome video files here:
 
 - `welcome-video.mp4` - Main video file (H.264 format)
-- `welcome-video.webm` - Backup video file (WebM format) 
+- `welcome-video.webm` - Backup video file (WebM format)
 - `video-thumbnail.jpg` - Video poster/thumbnail image (1920x1080)
 
 ## File Requirements:
