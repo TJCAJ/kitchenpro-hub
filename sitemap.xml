@@ -172,13 +172,24 @@
   </url>
 
   <url>
-    <loc>https://www.kitchenprohub.com/best-food-processors-review.html</loc>
+    <loc>https://www.kitchenprohub.com/best-stand-mixers-baking.html</loc>
     <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.kitchenprohub.com/images/products/food-processor.jpg</image:loc>
-      <image:title>Best Food Processors Review</image:title>
+      <image:loc>https://www.kitchenprohub.com/images/products/stand-mixer.jpg</image:loc>
+      <image:title>Best Stand Mixers for Baking</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/instant-pot-pressure-cooker-review.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/instant-pot.jpg</image:loc>
+      <image:title>Instant Pot Pressure Cooker Review</image:title>
     </image:image>
   </url>
 
