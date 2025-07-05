@@ -244,4 +244,59 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.kitchenprohub.com/best-food-processors-review.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/food-processor.jpg</image:loc>
+      <image:title>Best Food Processors Review</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/best-baking-sheets-pans.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/baking-sheets.jpg</image:loc>
+      <image:title>Best Baking Sheets and Pans</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/professional-baking-equipment.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/professional-baking-equipment.jpg</image:loc>
+      <image:title>Professional Baking Equipment</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/professional-mixing-bowls.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/mixing-bowls.jpg</image:loc>
+      <image:title>Professional Mixing Bowls</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/best-food-storage-containers.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/storage-containers.jpg</image:loc>
+      <image:title>Best Food Storage Containers</image:title>
+    </image:image>
+  </url>
+
 </urlset>
