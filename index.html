@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KitchenPro Hub - Professional Kitchen Tools & Reviews</title>
-    <meta name="description" content="Expert reviews and recommendations for the best kitchen tools and cooking equipment. Professional-grade equipment guides for home chefs.">
+    <meta name="description"
+        content="Expert reviews and recommendations for the best kitchen tools and cooking equipment. Professional-grade equipment guides for home chefs.">
 
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5260130878751797" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5260130878751797"
+        crossorigin="anonymous"></script>
 
     <style>
         * {
@@ -149,7 +152,7 @@
             background: #000;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .welcome-video {
@@ -199,7 +202,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0,0,0,0.7);
+            background: rgba(0, 0, 0, 0.7);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -211,7 +214,7 @@
         }
 
         .video-replay-overlay:hover {
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .replay-icon {
@@ -283,7 +286,7 @@
             background: white;
             border-radius: 10px;
             padding: 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             overflow: hidden;
         }
@@ -350,7 +353,7 @@
             background: white;
             border-radius: 10px;
             padding: 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             overflow: hidden;
         }
@@ -488,8 +491,81 @@
                 padding: 1.5rem;
             }
         }
+
+        /* Back to Top & Home Buttons */
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            min-width: 120px;
+            justify-content: center;
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0px);
+        }
+
+        /* Ikoner för knapparna */
+        .nav-button::before {
+            font-size: 16px;
+        }
+
+        .back-to-top::before {
+            content: "↑";
+        }
+
+        .home-button::before {
+            content: "🏠";
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .navigation-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .nav-button {
+                padding: 10px 16px;
+                font-size: 12px;
+                min-width: 100px;
+            }
+        }
+
+        /* Smooth scroll för hela sidan */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -519,7 +595,8 @@
     <section class="hero">
         <div class="container">
             <h1>Transform Your Kitchen into a Culinary Masterpiece</h1>
-            <p>Discover professional-grade kitchen tools, expert reviews, and insider tips to elevate your cooking game. From essential knives to modern appliances, we guide you to the best equipment for every budget.</p>
+            <p>Discover professional-grade kitchen tools, expert reviews, and insider tips to elevate your cooking game.
+                From essential knives to modern appliances, we guide you to the best equipment for every budget.</p>
             <a href="#featured-categories" class="cta-button">Explore Kitchen Tools</a>
         </div>
     </section>
@@ -530,7 +607,8 @@
             <div class="video-container" id="full-video-container">
                 <div class="video-header">
                     <h2 class="video-title">Welcome to KitchenPro Hub</h2>
-                    <p class="video-subtitle">Discover what makes us your ultimate destination for kitchen tool expertise</p>
+                    <p class="video-subtitle">Discover what makes us your ultimate destination for kitchen tool
+                        expertise</p>
                 </div>
 
                 <div class="video-wrapper" id="video-wrapper">
@@ -544,7 +622,8 @@
 
                     <!-- FUTURE VIDEO ELEMENT - Uncomment and modify when ready to add your video -->
 
-                    <video class="welcome-video" id="welcome-video" poster="/videos/video-thumbnail.jpg" preload="metadata">
+                    <video class="welcome-video" id="welcome-video" poster="/videos/video-thumbnail.jpg"
+                        preload="metadata">
                         <source src="/videos/welcome-video.mp4" type="video/mp4">
                         <source src="/videos/welcome-video.webm" type="video/webm">
                         Your browser does not support the video tag.
@@ -571,7 +650,9 @@
         <div class="container">
             <!-- Affiliate Disclosure -->
             <div class="affiliate-disclosure">
-                <strong>Affiliate Disclosure:</strong> This website contains affiliate links. When you make a purchase through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe in.
+                <strong>Affiliate Disclosure:</strong> This website contains affiliate links. When you make a purchase
+                through our links, we may earn a commission at no extra cost to you. We only recommend products we
+                genuinely believe in.
             </div>
 
             <!-- Featured Categories -->
@@ -580,7 +661,8 @@
                     <img src="/images/articles/kitchen-essentials.jpg" alt="Kitchen Essentials" class="category-image">
                     <div class="category-content">
                         <h3>🔪 Kitchen Essentials</h3>
-                        <p>Professional-grade knives, cutting boards, and essential tools every serious cook needs. Our expert reviews help you choose the perfect equipment for your culinary adventures.</p>
+                        <p>Professional-grade knives, cutting boards, and essential tools every serious cook needs. Our
+                            expert reviews help you choose the perfect equipment for your culinary adventures.</p>
                         <a href="/kitchen-essentials.html" class="category-link">Explore Kitchen Essentials</a>
                     </div>
                 </div>
@@ -589,7 +671,8 @@
                     <img src="/images/articles/cooking-appliances.jpg" alt="Cooking Appliances" class="category-image">
                     <div class="category-content">
                         <h3>🍳 Cooking Appliances</h3>
-                        <p>From stand mixers to pressure cookers, discover the appliances that will revolutionize your cooking process and save you time in the kitchen.</p>
+                        <p>From stand mixers to pressure cookers, discover the appliances that will revolutionize your
+                            cooking process and save you time in the kitchen.</p>
                         <a href="/cooking-appliances.html" class="category-link">Explore Appliances</a>
                     </div>
                 </div>
@@ -598,7 +681,8 @@
                     <img src="/images/articles/bakeware.jpg" alt="Bakeware" class="category-image">
                     <div class="category-content">
                         <h3>🧁 Bakeware</h3>
-                        <p>Professional baking equipment, mixing bowls, and specialty tools to help you create perfect pastries, cakes, and baked goods every time.</p>
+                        <p>Professional baking equipment, mixing bowls, and specialty tools to help you create perfect
+                            pastries, cakes, and baked goods every time.</p>
                         <a href="/bakeware.html" class="category-link">Explore Bakeware</a>
                     </div>
                 </div>
@@ -607,7 +691,8 @@
                     <img src="/images/articles/storage-solutions.jpg" alt="Storage Solutions" class="category-image">
                     <div class="category-content">
                         <h3>📦 Storage Solutions</h3>
-                        <p>Keep your kitchen organized with smart storage solutions, containers, and organizational tools that maximize space and efficiency.</p>
+                        <p>Keep your kitchen organized with smart storage solutions, containers, and organizational
+                            tools that maximize space and efficiency.</p>
                         <a href="/storage-solutions.html" class="category-link">Explore Storage</a>
                     </div>
                 </div>
@@ -618,11 +703,14 @@
                 <h2 class="section-title">Top Recommended Products</h2>
                 <div class="products-grid">
                     <div class="product-card">
-                        <img src="/images/products/chef-knife.jpg" alt="Wusthof Classic Chef Knife" class="product-image">
+                        <img src="/images/products/chef-knife.jpg" alt="Wusthof Classic Chef Knife"
+                            class="product-image">
                         <div class="product-content">
                             <div class="product-title">Wusthof Classic 8" Chef Knife</div>
-                            <div class="product-description">The gold standard for professional chef knives. Precision forged from high-carbon steel for exceptional sharpness and durability.</div>
-                            <a href="https://www.amazon.com/Wusthof-Classic-8-Inch-Chefs-Knife/dp/B00005MEGH?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">The gold standard for professional chef knives. Precision
+                                forged from high-carbon steel for exceptional sharpness and durability.</div>
+                            <a href="https://www.amazon.com/Wusthof-Classic-8-Inch-Chefs-Knife/dp/B00005MEGH?tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
 
@@ -630,8 +718,10 @@
                         <img src="/images/products/stand-mixer.jpg" alt="KitchenAid Stand Mixer" class="product-image">
                         <div class="product-content">
                             <div class="product-title">KitchenAid Stand Mixer</div>
-                            <div class="product-description">The iconic stand mixer that has been the standard in professional kitchens for decades. Perfect for baking and food preparation.</div>
-                            <a href="https://www.amazon.com/KitchenAid-Stand-Mixer-tilt-head/dp/B00063ULMI?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">The iconic stand mixer that has been the standard in
+                                professional kitchens for decades. Perfect for baking and food preparation.</div>
+                            <a href="https://www.amazon.com/KitchenAid-Stand-Mixer-tilt-head/dp/B00063ULMI?tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
 
@@ -639,17 +729,22 @@
                         <img src="/images/products/instant-pot.jpg" alt="Instant Pot Duo" class="product-image">
                         <div class="product-content">
                             <div class="product-title">Instant Pot Duo 7-in-1</div>
-                            <div class="product-description">Revolutionary pressure cooker that replaces 7 kitchen appliances. Save time and space with this versatile cooking solution.</div>
-                            <a href="https://www.amazon.com/Instant-Pot-Multi-Use-Programmable-Pressure/dp/B00FLYWNYQ?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">Revolutionary pressure cooker that replaces 7 kitchen
+                                appliances. Save time and space with this versatile cooking solution.</div>
+                            <a href="https://www.amazon.com/Instant-Pot-Multi-Use-Programmable-Pressure/dp/B00FLYWNYQ?tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
 
                     <div class="product-card">
-                        <img src="/images/products/cutting-board.jpg" alt="Bamboo Cutting Board Set" class="product-image">
+                        <img src="/images/products/cutting-board.jpg" alt="Bamboo Cutting Board Set"
+                            class="product-image">
                         <div class="product-content">
                             <div class="product-title">Bamboo Cutting Board Set</div>
-                            <div class="product-description">Eco-friendly bamboo cutting boards that are gentle on knives and naturally antimicrobial. Perfect for all food preparation needs.</div>
-                            <a href="https://www.amazon.com/s?k=bamboo+cutting+board&tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">Eco-friendly bamboo cutting boards that are gentle on
+                                knives and naturally antimicrobial. Perfect for all food preparation needs.</div>
+                            <a href="https://www.amazon.com/s?k=bamboo+cutting+board&tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
 
@@ -657,17 +752,22 @@
                         <img src="/images/products/cookware-set.jpg" alt="All-Clad Cookware Set" class="product-image">
                         <div class="product-content">
                             <div class="product-title">All-Clad Cookware Set</div>
-                            <div class="product-description">Professional-grade stainless steel cookware trusted by chefs worldwide. Even heating and lifetime durability guarantee.</div>
-                            <a href="https://www.amazon.com/s?k=all+clad+cookware&tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">Professional-grade stainless steel cookware trusted by
+                                chefs worldwide. Even heating and lifetime durability guarantee.</div>
+                            <a href="https://www.amazon.com/s?k=all+clad+cookware&tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
 
                     <div class="product-card">
-                        <img src="/images/products/food-processor.jpg" alt="Cuisinart Food Processor" class="product-image">
+                        <img src="/images/products/food-processor.jpg" alt="Cuisinart Food Processor"
+                            class="product-image">
                         <div class="product-content">
                             <div class="product-title">Cuisinart Food Processor</div>
-                            <div class="product-description">Powerful 14-cup food processor that handles all chopping, slicing, and mixing tasks with professional results every time.</div>
-                            <a href="https://www.amazon.com/Cuisinart-DFP-14BCNY-Processor-Brushed-Stainless/dp/B01AXM4WV2?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                            <div class="product-description">Powerful 14-cup food processor that handles all chopping,
+                                slicing, and mixing tasks with professional results every time.</div>
+                            <a href="https://www.amazon.com/Cuisinart-DFP-14BCNY-Processor-Brushed-Stainless/dp/B01AXM4WV2?tag=aiincomehub03-20"
+                                class="affiliate-link" target="_blank">View on Amazon</a>
                         </div>
                     </div>
                 </div>
@@ -723,7 +823,7 @@
     <!-- Smart Video Behavior Script -->
     <script>
         // Smart video behavior - only play welcome video once per user
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const VIDEO_SEEN_KEY = 'kitchenpro_welcome_video_seen';
             const VIDEO_SECTION = document.getElementById('video-section');
             const FULL_CONTAINER = document.getElementById('full-video-container');
@@ -751,7 +851,7 @@
 
                 // Add click handler to show full video again
                 if (WATCH_INTRO_BUTTON) {
-                    WATCH_INTRO_BUTTON.addEventListener('click', function() {
+                    WATCH_INTRO_BUTTON.addEventListener('click', function () {
                         showFullVideo();
                         scrollToVideo();
                     });
@@ -774,7 +874,7 @@
                     // Show replay overlay for returning users
                     if (replayOverlay) {
                         replayOverlay.style.display = 'flex';
-                        replayOverlay.addEventListener('click', function() {
+                        replayOverlay.addEventListener('click', function () {
                             video.muted = false;
                             video.currentTime = 0;
                             video.play();
@@ -793,11 +893,11 @@
 
                 // Mark as seen when video starts playing
                 if (video) {
-                    video.addEventListener('play', function() {
+                    video.addEventListener('play', function () {
                         localStorage.setItem(VIDEO_SEEN_KEY, 'true');
                     });
 
-                    video.addEventListener('timeupdate', function() {
+                    video.addEventListener('timeupdate', function () {
                         // Mark as seen after 5 seconds of watching
                         if (video.currentTime > 5) {
                             localStorage.setItem(VIDEO_SEEN_KEY, 'true');
@@ -807,7 +907,7 @@
 
                 // For placeholder (when video is not yet added), mark as seen on any interaction
                 if (placeholder) {
-                    placeholder.addEventListener('click', function() {
+                    placeholder.addEventListener('click', function () {
                         localStorage.setItem(VIDEO_SEEN_KEY, 'true');
                     });
                 }
@@ -821,17 +921,58 @@
             }
 
             // Add a way to reset video status (for testing)
-            window.resetVideoStatus = function() {
+            window.resetVideoStatus = function () {
                 localStorage.removeItem(VIDEO_SEEN_KEY);
                 location.reload();
             };
 
             // Debug function (remove in production)
-            window.checkVideoStatus = function() {
+            window.checkVideoStatus = function () {
                 console.log('Video seen:', localStorage.getItem(VIDEO_SEEN_KEY));
             };
         });
     </script>
 
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button onclick="scrollToTop()" class="nav-button back-to-top" title="Tillbaka till toppen">
+            Tillbaka upp
+        </button>
+        <a href="/" class="nav-button home-button" title="Till startsidan">
+            Hem
+        </a>
+    </div>
+
+    <!-- Navigation Buttons JavaScript -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+                buttons.style.visibility = 'visible';
+            } else {
+                buttons.style.opacity = '0.7';
+                buttons.style.visibility = 'visible';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+            } else {
+                buttons.style.opacity = '0.7';
+            }
+        });
+    </script>
+
 </body>
+
 </html>

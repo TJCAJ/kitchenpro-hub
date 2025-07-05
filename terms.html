@@ -1,29 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - KitchenPro Hub</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 1rem 0; }
-        .logo { font-size: 2rem; font-weight: bold; text-decoration: none; color: white; }
-        nav { background: #34495e; padding: 1rem 0; }
-        .nav-list { list-style: none; display: flex; flex-wrap: wrap; gap: 2rem; }
-        .nav-link { color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; }
-        .nav-link:hover { background-color: #2c3e50; }
-        main { padding: 3rem 0; }
-        .content { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; margin-bottom: 1rem; font-size: 2.5rem; }
-        h2 { color: #34495e; margin: 2rem 0 1rem 0; }
-        p { margin-bottom: 1rem; }
-        ul { margin-left: 2rem; margin-bottom: 1rem; }
-        footer { background: #2c3e50; color: white; padding: 2rem 0; text-align: center; }
-        @media (max-width: 768px) { .nav-list { flex-direction: column; gap: 0; } .nav-link { display: block; padding: 1rem; border-bottom: 1px solid #2c3e50; } }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-link:hover {
+            background-color: #2c3e50;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #34495e;
+            margin: 2rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .nav-link {
+                display: block;
+                padding: 1rem;
+                border-bottom: 1px solid #2c3e50;
+            }
+        }
+
+        /* Back to Top & Home Buttons */
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            min-width: 120px;
+            justify-content: center;
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0px);
+        }
+
+        /* Ikoner för knapparna */
+        .nav-button::before {
+            font-size: 16px;
+        }
+
+        .back-to-top::before {
+            content: "↑";
+        }
+
+        .home-button::before {
+            content: "🏠";
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .navigation-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .nav-button {
+                padding: 10px 16px;
+                font-size: 12px;
+                min-width: 100px;
+            }
+        }
+
+        /* Smooth scroll för hela sidan */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -47,10 +209,12 @@
             <div class="content">
                 <h1>Terms of Service</h1>
 
-                <p>Welcome to KitchenPro Hub. By accessing and using our website, you agree to be bound by these Terms of Service.</p>
+                <p>Welcome to KitchenPro Hub. By accessing and using our website, you agree to be bound by these Terms
+                    of Service.</p>
 
                 <h2>Acceptance of Terms</h2>
-                <p>By using this website, you agree to these terms. If you do not agree, please do not use our website.</p>
+                <p>By using this website, you agree to these terms. If you do not agree, please do not use our website.
+                </p>
 
                 <h2>Use of Website</h2>
                 <p>You may use our website for lawful purposes only. You agree not to:</p>
@@ -62,22 +226,29 @@
                 </ul>
 
                 <h2>Content and Reviews</h2>
-                <p>Our content, including product reviews and recommendations, is for informational purposes only. We strive for accuracy but make no warranties about the completeness or reliability of the information.</p>
+                <p>Our content, including product reviews and recommendations, is for informational purposes only. We
+                    strive for accuracy but make no warranties about the completeness or reliability of the information.
+                </p>
 
                 <h2>Affiliate Relationships</h2>
-                <p>We participate in affiliate programs and may earn commissions from purchases made through our links. This is disclosed on our Affiliate Disclosure page.</p>
+                <p>We participate in affiliate programs and may earn commissions from purchases made through our links.
+                    This is disclosed on our Affiliate Disclosure page.</p>
 
                 <h2>Intellectual Property</h2>
-                <p>All content on this website, including text, images, and design, is our intellectual property unless otherwise noted. You may not reproduce or distribute our content without permission.</p>
+                <p>All content on this website, including text, images, and design, is our intellectual property unless
+                    otherwise noted. You may not reproduce or distribute our content without permission.</p>
 
                 <h2>Disclaimer of Warranties</h2>
-                <p>This website is provided "as is" without warranties of any kind. We disclaim all warranties, express or implied, including warranties of merchantability and fitness for a particular purpose.</p>
+                <p>This website is provided "as is" without warranties of any kind. We disclaim all warranties, express
+                    or implied, including warranties of merchantability and fitness for a particular purpose.</p>
 
                 <h2>Limitation of Liability</h2>
-                <p>We shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of this website.</p>
+                <p>We shall not be liable for any direct, indirect, incidental, or consequential damages arising from
+                    your use of this website.</p>
 
                 <h2>Changes to Terms</h2>
-                <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to the website.</p>
+                <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon
+                    posting to the website.</p>
 
                 <h2>Contact Information</h2>
                 <p>If you have questions about these Terms of Service, please contact us at legal@kitchenpro-hub.com</p>
@@ -92,6 +263,46 @@
         </div>
     </footer>
 
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button onclick="scrollToTop()" class="nav-button back-to-top" title="Tillbaka till toppen">
+            Tillbaka upp
+        </button>
+        <a href="/" class="nav-button home-button" title="Till startsidan">
+            Hem
+        </a>
+    </div>
+
+    <!-- Navigation Buttons JavaScript -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+                buttons.style.visibility = 'visible';
+            } else {
+                buttons.style.opacity = '0.7';
+                buttons.style.visibility = 'visible';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+            } else {
+                buttons.style.opacity = '0.7';
+            }
+        });
+    </script>
 
 </body>
+
 </html>

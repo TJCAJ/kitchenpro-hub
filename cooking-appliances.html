@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Appliances - Best Kitchen Appliances for Home Chefs | KitchenPro Hub</title>
-    <meta name="description" content="Discover the best cooking appliances for your kitchen. Expert reviews of stand mixers, food processors, instant pots, and essential cooking equipment.">
-    <meta name="keywords" content="cooking appliances, kitchen appliances, stand mixers, food processors, instant pot, blenders">
+    <meta name="description"
+        content="Discover the best cooking appliances for your kitchen. Expert reviews of stand mixers, food processors, instant pots, and essential cooking equipment.">
+    <meta name="keywords"
+        content="cooking appliances, kitchen appliances, stand mixers, food processors, instant pot, blenders">
     <meta name="author" content="KitchenPro Team">
-    
+
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5260130878751797" crossorigin="anonymous"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5260130878751797"
+        crossorigin="anonymous"></script>
+
     <style>
         * {
             margin: 0;
@@ -113,7 +117,7 @@
             padding: 2rem;
             border-radius: 10px;
             margin-bottom: 3rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .category-intro h2 {
@@ -132,7 +136,7 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
@@ -229,18 +233,91 @@
             .category-title {
                 font-size: 2rem;
             }
-            
+
             .nav-list {
                 flex-direction: column;
                 gap: 0.5rem;
             }
-            
+
             .articles-grid {
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Back to Top & Home Buttons */
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            min-width: 120px;
+            justify-content: center;
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0px);
+        }
+
+        /* Ikoner för knapparna */
+        .nav-button::before {
+            font-size: 16px;
+        }
+
+        .back-to-top::before {
+            content: "↑";
+        }
+
+        .home-button::before {
+            content: "🏠";
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .navigation-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .nav-button {
+                padding: 10px 16px;
+                font-size: 12px;
+                min-width: 100px;
+            }
+        }
+
+        /* Smooth scroll för hela sidan */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -268,7 +345,8 @@
     <section class="category-header">
         <div class="container">
             <h1 class="category-title">Cooking Appliances</h1>
-            <p class="category-subtitle">Professional-grade appliances to elevate your cooking game and save time in the kitchen.</p>
+            <p class="category-subtitle">Professional-grade appliances to elevate your cooking game and save time in the
+                kitchen.</p>
         </div>
     </section>
 
@@ -277,43 +355,57 @@
         <div class="container">
             <!-- Affiliate Disclosure -->
             <div class="affiliate-disclosure">
-                <strong>Affiliate Disclosure:</strong> This page contains affiliate links to Amazon. We may earn a commission from qualifying purchases at no additional cost to you.
+                <strong>Affiliate Disclosure:</strong> This page contains affiliate links to Amazon. We may earn a
+                commission from qualifying purchases at no additional cost to you.
             </div>
 
             <!-- Category Introduction -->
             <div class="category-intro">
                 <h2>Power Up Your Kitchen with the Right Appliances</h2>
-                <p>Modern cooking appliances can transform your kitchen experience, saving time while delivering professional results. From powerful stand mixers to versatile pressure cookers, the right appliances make complex cooking techniques accessible to every home chef.</p>
+                <p>Modern cooking appliances can transform your kitchen experience, saving time while delivering
+                    professional results. From powerful stand mixers to versatile pressure cookers, the right appliances
+                    make complex cooking techniques accessible to every home chef.</p>
                 <br>
-                <p>Our team has extensively tested the latest cooking appliances to bring you comprehensive reviews that focus on performance, reliability, and value. Whether you're a beginner or an experienced cook, we'll help you choose appliances that match your cooking style and budget.</p>
+                <p>Our team has extensively tested the latest cooking appliances to bring you comprehensive reviews that
+                    focus on performance, reliability, and value. Whether you're a beginner or an experienced cook,
+                    we'll help you choose appliances that match your cooking style and budget.</p>
             </div>
 
             <!-- Featured Articles Grid -->
             <div class="articles-grid">
-                
+
                 <!-- Article 1: Stand Mixers -->
                 <article class="article">
-                    <img src="/images/products/stand-mixer.jpg" alt="Best Stand Mixers for Baking" class="article-image">
+                    <img src="/images/products/stand-mixer.jpg" alt="Best Stand Mixers for Baking"
+                        class="article-image">
                     <div class="article-content">
                         <h2 class="article-title">
-                            <a href="/best-stand-mixers-baking.html">Best Stand Mixers for Baking: 2025 Ultimate Guide</a>
+                            <a href="/best-stand-mixers-baking.html">Best Stand Mixers for Baking: 2025 Ultimate
+                                Guide</a>
                         </h2>
                         <div class="article-meta">Updated: July 2, 2025</div>
-                        <p class="article-excerpt">Discover the top stand mixers that make baking easier and more enjoyable. We've tested leading models to find the best options for every budget and baking need.</p>
-                        <a href="https://www.amazon.com/s?k=stand+mixers&tag=aiincomehub03-20" class="amazon-link" target="_blank">Shop Stand Mixers on Amazon</a>
+                        <p class="article-excerpt">Discover the top stand mixers that make baking easier and more
+                            enjoyable. We've tested leading models to find the best options for every budget and baking
+                            need.</p>
+                        <a href="https://www.amazon.com/s?k=stand+mixers&tag=aiincomehub03-20" class="amazon-link"
+                            target="_blank">Shop Stand Mixers on Amazon</a>
                     </div>
                 </article>
 
                 <!-- Article 2: Instant Pot -->
                 <article class="article">
-                    <img src="/images/products/instant-pot.jpg" alt="Instant Pot Pressure Cooker Review" class="article-image">
+                    <img src="/images/products/instant-pot.jpg" alt="Instant Pot Pressure Cooker Review"
+                        class="article-image">
                     <div class="article-content">
                         <h2 class="article-title">
-                            <a href="/instant-pot-pressure-cooker-review.html">Instant Pot vs Pressure Cooker: Complete Review & Guide 2025</a>
+                            <a href="/instant-pot-pressure-cooker-review.html">Instant Pot vs Pressure Cooker: Complete
+                                Review & Guide 2025</a>
                         </h2>
                         <div class="article-meta">Updated: July 1, 2025</div>
-                        <p class="article-excerpt">The ultimate comparison of Instant Pot models and traditional pressure cookers. Find the perfect multi-cooker for your kitchen and cooking style.</p>
-                        <a href="https://www.amazon.com/s?k=instant+pot&tag=aiincomehub03-20" class="amazon-link" target="_blank">Shop Instant Pot on Amazon</a>
+                        <p class="article-excerpt">The ultimate comparison of Instant Pot models and traditional
+                            pressure cookers. Find the perfect multi-cooker for your kitchen and cooking style.</p>
+                        <a href="https://www.amazon.com/s?k=instant+pot&tag=aiincomehub03-20" class="amazon-link"
+                            target="_blank">Shop Instant Pot on Amazon</a>
                     </div>
                 </article>
 
@@ -322,11 +414,14 @@
                     <img src="/images/products/food-processor.jpg" alt="Best Food Processors" class="article-image">
                     <div class="article-content">
                         <h2 class="article-title">
-                            <a href="/best-food-processors-review.html">Best Food Processors: Complete Buying Guide 2025</a>
+                            <a href="/best-food-processors-review.html">Best Food Processors: Complete Buying Guide
+                                2025</a>
                         </h2>
                         <div class="article-meta">Updated: June 29, 2025</div>
-                        <p class="article-excerpt">Cut prep time in half with the right food processor. Our comprehensive guide covers the best models for chopping, slicing, and food preparation.</p>
-                        <a href="https://www.amazon.com/s?k=food+processors&tag=aiincomehub03-20" class="amazon-link" target="_blank">Shop Food Processors on Amazon</a>
+                        <p class="article-excerpt">Cut prep time in half with the right food processor. Our
+                            comprehensive guide covers the best models for chopping, slicing, and food preparation.</p>
+                        <a href="https://www.amazon.com/s?k=food+processors&tag=aiincomehub03-20" class="amazon-link"
+                            target="_blank">Shop Food Processors on Amazon</a>
                     </div>
                 </article>
 
@@ -336,14 +431,10 @@
 
     <!-- Google AdSense Ad -->
     <div class="container" style="margin: 2rem auto; text-align: center;">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-5260130878751797"
-             data-ad-slot="1234567890"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5260130878751797"
+            data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
 
@@ -378,5 +469,47 @@
             </div>
         </div>
     </footer>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button onclick="scrollToTop()" class="nav-button back-to-top" title="Tillbaka till toppen">
+            Tillbaka upp
+        </button>
+        <a href="/" class="nav-button home-button" title="Till startsidan">
+            Hem
+        </a>
+    </div>
+
+    <!-- Navigation Buttons JavaScript -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+                buttons.style.visibility = 'visible';
+            } else {
+                buttons.style.opacity = '0.7';
+                buttons.style.visibility = 'visible';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelector('.navigation-buttons');
+            if (window.pageYOffset > 300) {
+                buttons.style.opacity = '1';
+            } else {
+                buttons.style.opacity = '0.7';
+            }
+        });
+    </script>
+
 </body>
+
 </html>
