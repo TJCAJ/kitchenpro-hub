@@ -63,7 +63,7 @@
   </url>
 
   <!-- Category Pages -->
-
+  
   <!-- Kitchen Essentials Category -->
   <url>
     <loc>https://www.kitchenprohub.com/kitchen-essentials.html</loc>
@@ -113,7 +113,7 @@
   </url>
 
   <!-- Product Articles -->
-
+  
   <!-- Kitchen Essentials Articles -->
   <url>
     <loc>https://www.kitchenprohub.com/best-chef-knives-professional-cooking.html</loc>
@@ -296,6 +296,40 @@
     <image:image>
       <image:loc>https://www.kitchenprohub.com/images/products/storage-containers.jpg</image:loc>
       <image:title>Best Food Storage Containers</image:title>
+    </image:image>
+  </url>
+
+  <!-- Nya produktsidor (Juli 2025) -->
+  <url>
+    <loc>https://www.kitchenprohub.com/kitchen-drawer-organizers.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/drawer-organizers.jpg</image:loc>
+      <image:title>Kitchen Drawer Organizers</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/pantry-organization-systems.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/pantry-organization.jpg</image:loc>
+      <image:title>Pantry Organization Systems</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/cake-decorating-tools.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/cake-decorating-tools.jpg</image:loc>
+      <image:title>Cake Decorating Tools</image:title>
     </image:image>
   </url>
 
