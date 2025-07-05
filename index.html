@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitchenPro Hub - Professional Kitchen Tools & Reviews</title>
+    <meta name="description" content="Expert reviews and recommendations for the best kitchen tools and cooking equipment. Professional-grade equipment guides for home chefs.">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5260130878751797" crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .tagline {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 1rem 0;
+        }
+        
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-link:hover {
+            background-color: #2c3e50;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.8)), url('/images/hero-kitchen-tools.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+        
+        /* Welcome Video Section */
+        .welcome-video-section {
+            background: #f8f9fa;
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .video-header {
+            margin-bottom: 2rem;
+        }
+        
+        .video-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .video-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .welcome-video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Video placeholder styling */
+        .video-placeholder {
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+        
+        .placeholder-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .placeholder-subtext {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* Smart video controls */
+        .video-seen-before {
+            position: relative;
+        }
+        
+        .video-replay-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: opacity 0.3s;
+        }
+        
+        .video-replay-overlay:hover {
+            background: rgba(0,0,0,0.8);
+        }
+        
+        .replay-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .replay-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .hide-video {
+            display: none;
+        }
+        
+        .minimize-video-section {
+            padding: 1rem 0;
+        }
+        
+        .minimized-video-container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .watch-intro-button {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .watch-intro-button:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #1f618d 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+        
+        .affiliate-disclosure {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .category-content {
+            padding: 2rem;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .category-card p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+        
+        .category-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .category-link:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Featured Products */
+        .featured-products {
+            margin: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .affiliate-link {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .affiliate-link:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #f39c12;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-section a:hover {
+            opacity: 1;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .nav-link {
+                display: block;
+                padding: 1rem;
+                border-bottom: 1px solid #2c3e50;
+            }
+            
+            .video-title {
+                font-size: 2rem;
+            }
+            
+            .video-subtitle {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            
+            .welcome-video-section {
+                padding: 2rem 0;
+            }
+            
+            .video-wrapper {
+                margin: 0 1rem;
+            }
+            
+            .placeholder-icon {
+                font-size: 3rem;
+            }
+            
+            .placeholder-text {
+                font-size: 1.1rem;
+            }
+            
+            .categories-grid,
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-image,
+            .product-image {
+                height: 180px;
+            }
+            
+            .category-content,
+            .product-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                KitchenPro Hub
+                <div class="tagline">Your Ultimate Guide to Professional Kitchen Tools</div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="#kitchen-essentials" class="nav-link">Kitchen Essentials</a></li>
+                <li><a href="#cooking-appliances" class="nav-link">Cooking Appliances</a></li>
+                <li><a href="#bakeware" class="nav-link">Bakeware</a></li>
+                <li><a href="#storage" class="nav-link">Storage Solutions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Kitchen into a Culinary Masterpiece</h1>
+            <p>Discover professional-grade kitchen tools, expert reviews, and insider tips to elevate your cooking game. From essential knives to modern appliances, we guide you to the best equipment for every budget.</p>
+            <a href="#featured-categories" class="cta-button">Explore Kitchen Tools</a>
+        </div>
+    </section>
+
+    <!-- Welcome Video Section -->
+    <section class="welcome-video-section" id="video-section">
+        <div class="container">
+            <div class="video-container" id="full-video-container">
+                <div class="video-header">
+                    <h2 class="video-title">Welcome to KitchenPro Hub</h2>
+                    <p class="video-subtitle">Discover what makes us your ultimate destination for kitchen tool expertise</p>
+                </div>
+                
+                <div class="video-wrapper" id="video-wrapper">
+                    <!-- VIDEO PLACEHOLDER - Replace this entire div with your video element -->
+                    <div class="video-placeholder" id="welcome-video-placeholder">
+                        <div class="placeholder-icon">🎬</div>
+                        <div class="placeholder-text">Welcome Video Coming Soon</div>
+                        <div class="placeholder-subtext">Your AI avatar introduction will be placed here</div>
+                    </div>
+                    
+                    <!-- FUTURE VIDEO ELEMENT - Uncomment and modify when ready to add your video -->
+                    <!--
+                    <video class="welcome-video" id="welcome-video" poster="/videos/video-thumbnail.jpg" preload="metadata">
+                        <source src="/videos/welcome-video.mp4" type="video/mp4">
+                        <source src="/videos/welcome-video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-replay-overlay" id="replay-overlay" style="display: none;">
+                        <div class="replay-icon">▶️</div>
+                        <div class="replay-text">Watch Welcome Video Again</div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            
+            <!-- Minimized video option for returning visitors -->
+            <div class="minimized-video-container" id="minimized-video-container" style="display: none;">
+                <button class="watch-intro-button" id="watch-intro-button">
+                    🎬 Watch Welcome Video
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Affiliate Disclosure -->
+            <div class="affiliate-disclosure">
+                <strong>Affiliate Disclosure:</strong> This website contains affiliate links. When you make a purchase through our links, we may earn a commission at no extra cost to you. We only recommend products we genuinely believe in.
+            </div>
+
+            <!-- Featured Categories -->
+            <section id="featured-categories" class="categories-grid">
+                <div class="category-card" id="kitchen-essentials">
+                    <img src="/images/kitchen-essentials-category.jpg" alt="Kitchen Essentials" class="category-image">
+                    <div class="category-content">
+                        <h3>🔪 Kitchen Essentials</h3>
+                        <p>Professional-grade knives, cutting boards, and essential tools every serious cook needs. Our expert reviews help you choose the perfect equipment for your culinary adventures.</p>
+                        <a href="https://www.amazon.com/s?k=kitchen+knives&tag=aiincomehub03-20" class="category-link" target="_blank">Shop Kitchen Essentials</a>
+                    </div>
+                </div>
+
+                <div class="category-card" id="cooking-appliances">
+                    <img src="/images/stand-mixer.jpg" alt="Cooking Appliances" class="category-image">
+                    <div class="category-content">
+                        <h3>🍳 Cooking Appliances</h3>
+                        <p>From stand mixers to pressure cookers, discover the appliances that will revolutionize your cooking process and save you time in the kitchen.</p>
+                        <a href="https://www.amazon.com/s?k=kitchen+appliances&tag=aiincomehub03-20" class="category-link" target="_blank">Shop Appliances</a>
+                    </div>
+                </div>
+
+                <div class="category-card" id="bakeware">
+                    <img src="/images/bakeware-category.jpg" alt="Bakeware" class="category-image">
+                    <div class="category-content">
+                        <h3>🧁 Bakeware</h3>
+                        <p>Professional baking equipment, mixing bowls, and specialty tools to help you create perfect pastries, cakes, and baked goods every time.</p>
+                        <a href="https://www.amazon.com/s?k=baking+equipment&tag=aiincomehub03-20" class="category-link" target="_blank">Shop Bakeware</a>
+                    </div>
+                </div>
+
+                <div class="category-card" id="storage">
+                    <img src="/images/storage-category.jpg" alt="Storage Solutions" class="category-image">
+                    <div class="category-content">
+                        <h3>📦 Storage Solutions</h3>
+                        <p>Keep your kitchen organized with smart storage solutions, containers, and organizational tools that maximize space and efficiency.</p>
+                        <a href="https://www.amazon.com/s?k=kitchen+storage&tag=aiincomehub03-20" class="category-link" target="_blank">Shop Storage</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="featured-products">
+                <h2 class="section-title">Top Recommended Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="/images/chef-knife.jpg" alt="Wusthof Classic Chef Knife" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">Wusthof Classic 8" Chef Knife</div>
+                            <div class="product-description">The gold standard for professional chef knives. Precision forged from high-carbon steel for exceptional sharpness and durability.</div>
+                            <a href="https://www.amazon.com/Wusthof-Classic-8-Inch-Chefs-Knife/dp/B00005MEGH?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/images/stand-mixer.jpg" alt="KitchenAid Stand Mixer" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">KitchenAid Stand Mixer</div>
+                            <div class="product-description">The iconic stand mixer that has been the standard in professional kitchens for decades. Perfect for baking and food preparation.</div>
+                            <a href="https://www.amazon.com/KitchenAid-Stand-Mixer-tilt-head/dp/B00063ULMI?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/images/instant-pot.jpg" alt="Instant Pot Duo" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">Instant Pot Duo 7-in-1</div>
+                            <div class="product-description">Revolutionary pressure cooker that replaces 7 kitchen appliances. Save time and space with this versatile cooking solution.</div>
+                            <a href="https://www.amazon.com/Instant-Pot-Multi-Use-Programmable-Pressure/dp/B00FLYWNYQ?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/images/cutting-board.jpg" alt="Bamboo Cutting Board Set" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">Bamboo Cutting Board Set</div>
+                            <div class="product-description">Eco-friendly bamboo cutting boards that are gentle on knives and naturally antimicrobial. Perfect for all food preparation needs.</div>
+                            <a href="https://www.amazon.com/s?k=bamboo+cutting+board&tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/images/cookware-set.jpg" alt="All-Clad Cookware Set" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">All-Clad Cookware Set</div>
+                            <div class="product-description">Professional-grade stainless steel cookware trusted by chefs worldwide. Even heating and lifetime durability guarantee.</div>
+                            <a href="https://www.amazon.com/s?k=all+clad+cookware&tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/images/food-processor.jpg" alt="Cuisinart Food Processor" class="product-image">
+                        <div class="product-content">
+                            <div class="product-title">Cuisinart Food Processor</div>
+                            <div class="product-description">Powerful 14-cup food processor that handles all chopping, slicing, and mixing tasks with professional results every time.</div>
+                            <a href="https://www.amazon.com/Cuisinart-DFP-14BCNY-Processor-Brushed-Stainless/dp/B01AXM4WV2?tag=aiincomehub03-20" class="affiliate-link" target="_blank">View on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#kitchen-essentials">Kitchen Essentials</a></li>
+                        <li><a href="#cooking-appliances">Cooking Appliances</a></li>
+                        <li><a href="#bakeware">Bakeware</a></li>
+                        <li><a href="#storage">Storage Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/reviews.html">Expert Reviews</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>Stay updated with the latest kitchen tool reviews and cooking tips from our expert team.</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #34495e; padding-top: 1rem; margin-top: 2rem;">
+                <p>&copy; 2025 KitchenPro Hub. All rights reserved. | Amazon Associate Program Participant</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google AdSense Ad -->
+    <script>
+        // AdSense will automatically place ads
+    </script>
+
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 26px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div>
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.io/agent', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+    <!-- Smart Video Behavior Script -->
+    <script>
+        // Smart video behavior - only play welcome video once per user
+        document.addEventListener('DOMContentLoaded', function() {
+            const VIDEO_SEEN_KEY = 'kitchenpro_welcome_video_seen';
+            const VIDEO_SECTION = document.getElementById('video-section');
+            const FULL_CONTAINER = document.getElementById('full-video-container');
+            const MINIMIZED_CONTAINER = document.getElementById('minimized-video-container');
+            const WATCH_INTRO_BUTTON = document.getElementById('watch-intro-button');
+            
+            // Check if user has seen the video before
+            const hasSeenVideo = localStorage.getItem(VIDEO_SEEN_KEY) === 'true';
+            
+            if (hasSeenVideo) {
+                // User has seen video before - show minimized version
+                showMinimizedVideo();
+            } else {
+                // First time visitor - show full video
+                showFullVideo();
+                
+                // Mark video as seen when user interacts with it
+                markVideoAsSeen();
+            }
+            
+            function showMinimizedVideo() {
+                VIDEO_SECTION.classList.add('minimize-video-section');
+                FULL_CONTAINER.style.display = 'none';
+                MINIMIZED_CONTAINER.style.display = 'block';
+                
+                // Add click handler to show full video again
+                if (WATCH_INTRO_BUTTON) {
+                    WATCH_INTRO_BUTTON.addEventListener('click', function() {
+                        showFullVideo();
+                        scrollToVideo();
+                    });
+                }
+            }
+            
+            function showFullVideo() {
+                VIDEO_SECTION.classList.remove('minimize-video-section');
+                FULL_CONTAINER.style.display = 'block';
+                MINIMIZED_CONTAINER.style.display = 'none';
+                
+                // Handle video element if it exists
+                const video = document.getElementById('welcome-video');
+                const replayOverlay = document.getElementById('replay-overlay');
+                
+                if (video && hasSeenVideo) {
+                    // Mute video for returning users but allow them to unmute
+                    video.muted = true;
+                    
+                    // Show replay overlay for returning users
+                    if (replayOverlay) {
+                        replayOverlay.style.display = 'flex';
+                        replayOverlay.addEventListener('click', function() {
+                            video.muted = false;
+                            video.currentTime = 0;
+                            video.play();
+                            replayOverlay.style.display = 'none';
+                        });
+                    }
+                    
+                    // Add controls for returning users
+                    video.controls = true;
+                }
+            }
+            
+            function markVideoAsSeen() {
+                const video = document.getElementById('welcome-video');
+                const placeholder = document.getElementById('welcome-video-placeholder');
+                
+                // Mark as seen when video starts playing
+                if (video) {
+                    video.addEventListener('play', function() {
+                        localStorage.setItem(VIDEO_SEEN_KEY, 'true');
+                    });
+                    
+                    video.addEventListener('timeupdate', function() {
+                        // Mark as seen after 5 seconds of watching
+                        if (video.currentTime > 5) {
+                            localStorage.setItem(VIDEO_SEEN_KEY, 'true');
+                        }
+                    });
+                }
+                
+                // For placeholder (when video is not yet added), mark as seen on any interaction
+                if (placeholder) {
+                    placeholder.addEventListener('click', function() {
+                        localStorage.setItem(VIDEO_SEEN_KEY, 'true');
+                    });
+                }
+            }
+            
+            function scrollToVideo() {
+                VIDEO_SECTION.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+            
+            // Add a way to reset video status (for testing)
+            window.resetVideoStatus = function() {
+                localStorage.removeItem(VIDEO_SEEN_KEY);
+                location.reload();
+            };
+            
+            // Debug function (remove in production)
+            window.checkVideoStatus = function() {
+                console.log('Video seen:', localStorage.getItem(VIDEO_SEEN_KEY));
+            };
+        });
+    </script>
+
+</body>
+</html>
