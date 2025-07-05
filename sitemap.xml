@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.kitchenprohub.com/</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/hero-kitchen-tools.jpg</image:loc>
+      <image:title>Professional Kitchen Tools</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.kitchenprohub.com/about.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.kitchenprohub.com/contact.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Reviews Page -->
+  <url>
+    <loc>https://www.kitchenprohub.com/reviews.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.kitchenprohub.com/privacy.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://www.kitchenprohub.com/terms.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Kitchen Essentials Category -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/kitchen-essentials/</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/articles/kitchen-essentials.jpg</image:loc>
+      <image:title>Kitchen Essentials</image:title>
+    </image:image>
+  </url>
+
+  <!-- Cooking Appliances Category -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/cooking-appliances/</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/articles/cooking-appliances.jpg</image:loc>
+      <image:title>Cooking Appliances</image:title>
+    </image:image>
+  </url>
+
+  <!-- Bakeware Category -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/bakeware/</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/articles/bakeware.jpg</image:loc>
+      <image:title>Professional Bakeware</image:title>
+    </image:image>
+  </url>
+
+  <!-- Storage Solutions Category -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/storage-solutions/</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/articles/storage-solutions.jpg</image:loc>
+      <image:title>Kitchen Storage Solutions</image:title>
+    </image:image>
+  </url>
+
+  <!-- Kitchen Essentials Articles -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/kitchen-essentials/best-chef-knives-professional-cooking.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/chef-knife.jpg</image:loc>
+      <image:title>Best Chef Knives for Professional Cooking</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/kitchen-essentials/best-cutting-boards-wood-vs-plastic.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/cutting-board.jpg</image:loc>
+      <image:title>Best Cutting Boards Guide</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/kitchen-essentials/best-cookware-sets-nonstick-stainless.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/cookware-set.jpg</image:loc>
+      <image:title>Best Cookware Sets Review</image:title>
+    </image:image>
+  </url>
+
+  <!-- Cooking Appliances Articles -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/cooking-appliances/best-stand-mixers-baking.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/stand-mixer.jpg</image:loc>
+      <image:title>Best Stand Mixers for Baking</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/cooking-appliances/instant-pot-pressure-cooker-review.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.kitchenprohub.com/images/products/instant-pot.jpg</image:loc>
+      <image:title>Instant Pot Pressure Cooker Review</image:title>
+    </image:image>
+  </url>
+
+  <!-- Bakeware Articles -->
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/bakeware/professional-baking-equipment.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/bakeware/best-baking-sheets-pans.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/bakeware/cake-decorating-tools.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.kitchenprohub.com/categories/bakeware/professional-mixing-bowls/index.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Affiliate Disclosure -->
+  <url>
+    <loc>https://www.kitchenprohub.com/affiliate-disclosure.html</loc>
+    <lastmod>2025-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
