@@ -42,5 +42,27 @@
       "total_errors": 0,
       "success_rate": 100.0
     }
+  },
+  {
+    "timestamp": "2025-07-09T10:23:52.070499",
+    "updates": [
+      {
+        "page": "cake-decorating-tools.html",
+        "category": "bakeware",
+        "status": "success"
+      },
+      {
+        "page": "professional-baking-equipment.html",
+        "category": "bakeware",
+        "status": "success"
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "category_updated": "bakeware",
+      "pages_updated": 2,
+      "total_errors": 0,
+      "success_rate": 100.0
+    }
   }
 ]
