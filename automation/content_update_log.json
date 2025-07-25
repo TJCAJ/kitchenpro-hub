@@ -218,5 +218,27 @@
       "total_errors": 0,
       "success_rate": 100.0
     }
+  },
+  {
+    "timestamp": "2025-07-25T10:25:06.734249",
+    "updates": [
+      {
+        "page": "best-baking-sheets-pans.html",
+        "category": "bakeware",
+        "status": "success"
+      },
+      {
+        "page": "professional-baking-equipment.html",
+        "category": "bakeware",
+        "status": "success"
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "category_updated": "bakeware",
+      "pages_updated": 2,
+      "total_errors": 0,
+      "success_rate": 100.0
+    }
   }
 ]
