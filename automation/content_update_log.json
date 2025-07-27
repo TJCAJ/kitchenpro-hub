@@ -240,5 +240,27 @@
       "total_errors": 0,
       "success_rate": 100.0
     }
+  },
+  {
+    "timestamp": "2025-07-27T10:21:54.344263",
+    "updates": [
+      {
+        "page": "best-cookware-sets-nonstick-stainless.html",
+        "category": "kitchen-essentials",
+        "status": "success"
+      },
+      {
+        "page": "best-cutting-boards-wood-vs-plastic.html",
+        "category": "kitchen-essentials",
+        "status": "success"
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "category_updated": "kitchen-essentials",
+      "pages_updated": 2,
+      "total_errors": 0,
+      "success_rate": 100.0
+    }
   }
 ]
