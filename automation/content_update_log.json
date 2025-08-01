@@ -306,5 +306,27 @@
       "total_errors": 0,
       "success_rate": 100.0
     }
+  },
+  {
+    "timestamp": "2025-08-01T10:25:09.012700",
+    "updates": [
+      {
+        "page": "best-stand-mixers-baking.html",
+        "category": "cooking-appliances",
+        "status": "success"
+      },
+      {
+        "page": "instant-pot-pressure-cooker-review.html",
+        "category": "cooking-appliances",
+        "status": "success"
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "category_updated": "cooking-appliances",
+      "pages_updated": 2,
+      "total_errors": 0,
+      "success_rate": 100.0
+    }
   }
 ]
