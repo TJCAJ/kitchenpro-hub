@@ -328,5 +328,27 @@
       "total_errors": 0,
       "success_rate": 100.0
     }
+  },
+  {
+    "timestamp": "2025-08-03T10:22:11.197554",
+    "updates": [
+      {
+        "page": "best-food-storage-containers.html",
+        "category": "storage-solutions",
+        "status": "success"
+      },
+      {
+        "page": "storage-solutions.html",
+        "category": "storage-solutions",
+        "status": "success"
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "category_updated": "storage-solutions",
+      "pages_updated": 2,
+      "total_errors": 0,
+      "success_rate": 100.0
+    }
   }
 ]
