@@ -17,3 +17,6 @@ ehthumbs.db
 .vscode/
 .idea/
 kitchenpro-hub.code-workspace
+
+# venv
+venv/
