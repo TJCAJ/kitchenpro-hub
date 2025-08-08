@@ -20,3 +20,13 @@ kitchenpro-hub.code-workspace
 
 # venv
 venv/
+
+# .gitignore
+
+# Python
+venv/
+__pycache__/
+
+# Node.js
+node_modules/
+dist/
