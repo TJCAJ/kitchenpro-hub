@@ -1,0 +1,28 @@
+{
+    "cookingAppliances": [
+        {
+            "title": "Best Stand Mixers for Baking: 2025 Ultimate Guide",
+            "image": "/images/products/stand-mixer.jpg",
+            "dateUpdated": "July 2, 2025",
+            "excerpt": "Discover the top stand mixers that make baking easier and more enjoyable. We've tested leading models to find the best options for every budget and baking need.",
+            "amazonLink": "https://www.amazon.com/s?k=stand+mixers&tag=aiincomehub03-20",
+            "articleLink": "/best-stand-mixers-baking.html"
+        },
+        {
+            "title": "Instant Pot vs Pressure Cooker: Complete Review & Guide 2025",
+            "image": "/images/products/instant-pot.jpg",
+            "dateUpdated": "July 1, 2025",
+            "excerpt": "The ultimate comparison of Instant Pot models and traditional pressure cookers. Find the perfect multi-cooker for your kitchen and cooking style.",
+            "amazonLink": "https://www.amazon.com/s?k=instant+pot&tag=aiincomehub03-20",
+            "articleLink": "/instant-pot-pressure-cooker-review.html"
+        },
+        {
+            "title": "Best Food Processors: Complete Buying Guide 2025",
+            "image": "/images/products/food-processor.jpg",
+            "dateUpdated": "June 29, 2025",
+            "excerpt": "Cut prep time in half with the right food processor. Our comprehensive guide covers the best models for chopping, slicing, and food preparation.",
+            "amazonLink": "https://www.amazon.com/s?k=food+processors&tag=aiincomehub03-20",
+            "articleLink": "/best-food-processors-review.html"
+        }
+    ]
+}

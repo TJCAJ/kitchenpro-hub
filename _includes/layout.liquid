@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>KitchenPro Hub</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/kitchen-essentials/">Kitchen Essentials</a> |
+      <a href="/cooking-appliances/">Cooking Appliances</a> |
+      <a href="/bakeware/">Bakeware</a> |
+      <a href="/storage-solutions/">Storage Solutions</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ "now" | date: "%Y" }} KitchenPro Hub</p>
+  </footer>
+
+</body>
+</html>

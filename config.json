@@ -11,7 +11,7 @@
       "publisher_id": "ca-pub-5260130878751797",
       "ad_units": {
         "header_banner": "728x90",
-        "sidebar_square": "300x250", 
+        "sidebar_square": "300x250",
         "in_content": "336x280",
         "mobile_banner": "320x100"
       }
@@ -28,7 +28,7 @@
       "description": "Must-have tools every home cook needs"
     },
     "cooking-appliances": {
-      "name": "Cooking Appliances", 
+      "name": "Cooking Appliances",
       "description": "Modern appliances to revolutionize your cooking"
     },
     "bakeware": {
